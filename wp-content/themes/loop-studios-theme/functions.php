@@ -3,10 +3,10 @@
 // Enqueue styles and scripts
 function your_theme_enqueue_scripts() {
     // Enqueue main stylesheet
-    wp_enqueue_style( 'space-theme', esc_url( get_template_directory_uri() . '/assets/css/styles.css' ) );
+    wp_enqueue_style( 'loop-studios-theme', esc_url( get_template_directory_uri() . '/assets/css/styles.css' ) );
     
     // Enqueue custom JavaScript
-    wp_enqueue_script('space-theme', get_template_directory_uri() . '/assets/js/main.js', array('jquery') );
+    wp_enqueue_script('loop-studios-theme', get_template_directory_uri() . '/assets/js/main.js', array('jquery') );
 }
 add_action('wp_enqueue_scripts', 'your_theme_enqueue_scripts');
 
@@ -22,8 +22,8 @@ add_theme_support( 'html5', array( 'comment-list', 'comment-form', 'search-form'
 // Add custom menu support
 function your_theme_register_menus() {
     register_nav_menus(array(
-        'primary-menu' => __('Primary Menu', 'space-theme'),
-        'secondary-menu' => __('Secondary Menu', 'space-theme'),
+        'primary-menu' => __('Primary Menu', 'loop-studios-theme'),
+        'secondary-menu' => __('Secondary Menu', 'loop-studios-theme'),
     ));
 }
 add_action ('after_setup_theme', 'your_theme_register_menus');
@@ -80,7 +80,7 @@ add_filter('body_class', 'add_page_title_to_body_class');
 function custom_theme_customizer( $wp_customize ) {
     // Add a section for Logo
     $wp_customize->add_section( 'logo_section', array(
-        'title'    => __( 'Logo', 'space-theme' ),
+        'title'    => __( 'Logo', 'loop-studios-theme' ),
         'priority' => 30,
     ) );
 
@@ -118,5 +118,9 @@ function handle_svg_upload( $data, $file, $filename, $mimes ) {
 }
 add_filter( 'wp_check_filetype_and_ext', 'handle_svg_upload', 10, 4 );
 
+
+// Disable theme and plugin changes
+define('DISALLOW_FILE_EDIT',true);
+define('DISALLOW_FILE_MODS',true);
 
 ?>

@@ -9,7 +9,6 @@
         ?>
   </a>
  </div>
- <div class="line"></div>
  <nav class="site-navigation">
   <?php
         wp_nav_menu( array(
