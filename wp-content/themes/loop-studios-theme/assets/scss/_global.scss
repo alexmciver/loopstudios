@@ -1,0 +1,82 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 10px;
+}
+body,
+p {
+  font-family: $barlow;
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 3.2rem;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: $bellefair;
+  font-weight: 400;
+}
+
+h1 {
+  font-size: 15rem;
+  line-height: 17.19rem;
+}
+
+h2 {
+  font-size: 10rem;
+  line-height: 11.46rem;
+}
+
+h3 {
+  font-size: 5.6rem;
+  line-height: 6.418rem;
+}
+
+h4 {
+  font-size: 3.2rem;
+  line-height: 3.667rem;
+}
+
+h5 {
+  font-family: $barlow-condensed;
+  font-weight: 400;
+  font-size: 2.8rem;
+  line-height: 3.36rem;
+  letter-spacing: 0.4725rem;
+}
+
+.container {
+  max-width: 119.8rem;
+  height: 100%;
+  margin: 0 auto;
+  padding-left: 6.25rem;
+}
+
+.home {
+  background: url("../images/home/background-home-desktop.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.destination {
+  background: url("../images/destination/background-destination-desktop.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.crew {
+  background: url("../images/crew/background-crew-desktop.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.technology {
+  background: url("../images/technology/background-technology-desktop.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}

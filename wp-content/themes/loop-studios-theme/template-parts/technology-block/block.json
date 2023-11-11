@@ -1,0 +1,17 @@
+{
+  "name": "space-theme/technology-block",
+  "title": "technology block",
+  "description": "A custom technology block.",
+  "category": "alex-blocks",
+  "keywords": ["technology"],
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "/template-parts/technology-block/technology-block.php",
+    "blockVersion": 2
+  },
+  "supports": {
+    "anchor": true,
+    "align": true,
+    "className": true
+  }
+}
