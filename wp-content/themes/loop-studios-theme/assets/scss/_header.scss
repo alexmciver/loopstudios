@@ -7,7 +7,6 @@
     align-items: center;
     padding-top: 6.6rem;
     padding-bottom: 13rem;
-    position: relative;
     .logo,
     .site-navigation {
       width: 50%;
@@ -26,6 +25,7 @@
           a {
             text-decoration: none;
             color: $white;
+            font-family: $Alata;
           }
         }
       }

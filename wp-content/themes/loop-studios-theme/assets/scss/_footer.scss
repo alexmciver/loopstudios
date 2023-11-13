@@ -21,6 +21,7 @@ footer {
           a {
             color: $white;
             text-decoration: none;
+            font-family: $Alata;
           }
         }
         ul#footer-menu {
@@ -42,6 +43,10 @@ footer {
         justify-content: space-between;
         margin-bottom: 3.6rem;
         margin-left: 50%;
+      }
+      .copyright {
+        font-family: $Alata;
+        color: $dark-gray;
       }
     }
   }
