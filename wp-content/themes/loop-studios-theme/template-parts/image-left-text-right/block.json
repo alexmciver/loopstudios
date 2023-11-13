@@ -1,0 +1,17 @@
+{
+  "name": "loop-studios-theme/image-left-text-right-block",
+  "title": "image left text right block",
+  "description": "A custom image left text right block.",
+  "category": "alex-blocks",
+  "keywords": ["image"],
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "/template-parts/image-left-text-right/image-left-text-right-block.php",
+    "blockVersion": 2
+  },
+  "supports": {
+    "anchor": true,
+    "align": true,
+    "className": true
+  }
+}

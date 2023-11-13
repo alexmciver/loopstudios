@@ -31,10 +31,8 @@ add_action ('after_setup_theme', 'your_theme_register_menus');
 // Registering ACF blocks
 function alex_register_acf_blocks() {
     $block_templates = array(
-        'crew-block',
-        'destination-block',
-        'home-block',
-        'technology-block',
+        'hero-block',
+        'image-left-text-right',
     );
 
     foreach ($block_templates as $template) {

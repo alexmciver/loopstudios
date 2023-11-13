@@ -19,7 +19,7 @@
         ?>
   </main>
 
-  <?php wp_footer(); ?>
+  <?php get_footer(); ?>
  </body>
 
 </html>

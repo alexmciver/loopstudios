@@ -1,0 +1,17 @@
+{
+  "name": "loop-studios-theme/hero-block",
+  "title": "hero block",
+  "description": "A custom hero block.",
+  "category": "alex-blocks",
+  "keywords": ["hero"],
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "/template-parts/hero-block/hero-block.php",
+    "blockVersion": 2
+  },
+  "supports": {
+    "anchor": true,
+    "align": true,
+    "className": true
+  }
+}
