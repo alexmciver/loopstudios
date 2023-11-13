@@ -1,5 +1,19 @@
 .hero-block {
   height: 65rem;
   .hero-block-content {
+    position: relative;
+    top: 22.8rem;
+    width: 100%;
+    max-width: 65.3rem;
+    border: 3px solid $white;
+    h1 {
+      text-transform: uppercase;
+      color: $white;
+      padding: 4.3rem;
+      font-family: $JosefinSans;
+      font-size: 5.9rem;
+      font-weight: 300;
+      letter-spacing: 1rem;
+    }
   }
 }
