@@ -23,19 +23,16 @@
       max-width: 16.1rem;
       border: 0.3rem solid $dark-gray;
       padding: 1.5rem;
+      text-transform: uppercase;
+      color: $black;
+      font-family: $Alata;
+      letter-spacing: 0.5rem;
+      font-size: 1.7rem;
+      text-decoration: none;
       &:hover {
+        color: $white;
         background: $black;
-        border: 0.3rem solid $black;
-      }
-      a {
-        text-transform: uppercase;
-        color: $black;
-        font-family: $Alata;
-        letter-spacing: 0.5rem;
-        font-size: 1.7rem;
-        &:hover {
-          color: $white;
-        }
+        border-color: $black;
       }
     }
   }

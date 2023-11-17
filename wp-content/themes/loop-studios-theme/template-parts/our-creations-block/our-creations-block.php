@@ -10,7 +10,7 @@
    <div class="title">
     <h1><?php echo esc_html($our_creations_title); ?></h1>
    </div>
-   <a class="button">
+   <a href="#" class="button">
     <?php echo esc_html($see_all_button_text); ?>
    </a>
   </div>
