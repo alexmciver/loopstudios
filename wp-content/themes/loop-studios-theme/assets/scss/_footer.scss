@@ -22,6 +22,18 @@ footer {
             color: $white;
             text-decoration: none;
             font-family: $Alata;
+            position: relative;
+            &:hover {
+              &:after {
+                content: "";
+                height: 0.2rem;
+                width: 2.4rem;
+                background: $white;
+                display: block;
+                margin: 0 auto;
+                margin-top: 1rem;
+              }
+            }
           }
         }
         ul#footer-menu {
@@ -43,6 +55,16 @@ footer {
         justify-content: space-between;
         margin-bottom: 3.6rem;
         margin-left: 50%;
+        svg:hover {
+          position: absolute;
+          &::after {
+            content: "";
+            height: 0.2rem;
+            width: 2.4rem;
+            background: $white;
+            display: block;
+          }
+        }
       }
       .copyright {
         font-family: $Alata;
