@@ -1,0 +1,17 @@
+{
+  "name": "loop-studios-theme/our-creations-block",
+  "title": "our creations block",
+  "description": "A custom our creations block.",
+  "category": "alex-blocks",
+  "keywords": ["creations"],
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "/template-parts/our-creations-block/our-creations-block.php",
+    "blockVersion": 2
+  },
+  "supports": {
+    "anchor": true,
+    "align": true,
+    "className": true
+  }
+}

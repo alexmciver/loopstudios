@@ -1,0 +1,67 @@
+.our-creations-block {
+  margin-bottom: 18.5rem;
+  .title-and-btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 8.4rem;
+    .title,
+    .button {
+      width: 50%;
+    }
+    .title {
+      max-width: 39.6rem;
+      h1 {
+        text-transform: uppercase;
+        font-family: $JosefinSans;
+        font-size: 3.9rem;
+      }
+    }
+    .button {
+      display: flex;
+      justify-content: center;
+      max-width: 16.1rem;
+      border: 0.3rem solid $dark-gray;
+      padding: 1.5rem;
+      &:hover {
+        background: $black;
+        border: 0.3rem solid $black;
+      }
+      a {
+        text-transform: uppercase;
+        color: $black;
+        font-family: $Alata;
+        letter-spacing: 0.5rem;
+        font-size: 1.7rem;
+        &:hover {
+          color: $white;
+        }
+      }
+    }
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 3rem 3.1rem;
+    .grid-column {
+      width: 25.4rem;
+      height: 44.9rem;
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+    }
+    .overlay {
+      position: absolute;
+      background: #0f07045a;
+      width: 25.4rem;
+      height: 44.9rem;
+    }
+    h3 {
+      color: $white;
+      text-transform: uppercase;
+      font-family: $JosefinSans;
+      padding-bottom: 3.8rem;
+    }
+  }
+}

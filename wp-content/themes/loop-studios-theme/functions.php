@@ -33,6 +33,7 @@ function alex_register_acf_blocks() {
     $block_templates = array(
         'hero-block',
         'image-left-text-right',
+        'our-creations-block',
     );
 
     foreach ($block_templates as $template) {
