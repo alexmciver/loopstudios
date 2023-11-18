@@ -1,14 +1,12 @@
+<?php
+ $logo_image = get_field('logo_image', 'option');
+?>
 <div class="header">
  <div class="container">
   <div class="navbar">
    <div class="logo">
     <a href="/">
-     <?php
-        $logo_url = get_theme_mod( 'logo_image', '' );
-        if ( ! empty( $logo_url ) ) {
-            echo '<img src="' . esc_url( $logo_url ) . '" alt="Logo">';
-        }
-        ?>
+     <img src="<?php echo esc_url($logo_image); ?>" alt="">
     </a>
    </div>
    <nav class="site-navigation">
