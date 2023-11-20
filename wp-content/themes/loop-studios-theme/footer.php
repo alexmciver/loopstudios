@@ -3,6 +3,7 @@
 
 <?php
  $logo_image = get_field('logo_image', 'option');
+ $footer_copyright = get_field('footer_copyright', 'option');
 ?>
 <footer>
  <div class="container">
@@ -33,7 +34,7 @@
      <?php endif; ?>
     </div>
     <div class="copyright">
-     <p>&copy; <?php echo date('Y'); ?> Loopstudios All Rights Reserved.</p>
+     <p>&copy; <?php echo date('Y'); ?> <?php echo esc_html($footer_copyright); ?></p>
     </div>
    </div>
   </div>
