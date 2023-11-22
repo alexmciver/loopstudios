@@ -5,13 +5,23 @@ footer {
   padding-bottom: 4.8rem;
   .flexbox {
     display: flex;
+    @include mobile {
+      display: block;
+    }
     justify-content: space-between;
     .content-left,
     .content-right {
       width: 50%;
+      @include mobile {
+        text-align: center;
+        width: 100%;
+      }
     }
     .content-left {
       max-width: 39.4rem;
+      @include mobile {
+        max-width: 100%;
+      }
       .logo {
         padding-bottom: 3.2rem;
       }
@@ -40,6 +50,9 @@ footer {
           display: flex;
           max-width: 39.4rem;
           justify-content: space-between;
+          @include mobile {
+            display: block;
+          }
         }
       }
     }
@@ -49,12 +62,18 @@ footer {
       flex-direction: column;
       justify-content: flex-end;
       text-align: right;
+      @include mobile {
+        display: block;
+      }
       .social-icons {
         max-width: 14.5rem;
         display: flex;
         justify-content: space-between;
         margin-bottom: 3.6rem;
         margin-left: 50%;
+        @include mobile {
+          margin-left: 0;
+        }
         svg:hover {
           position: absolute;
           &::after {

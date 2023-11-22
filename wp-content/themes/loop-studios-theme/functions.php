@@ -73,4 +73,27 @@ add_filter('body_class', 'add_page_title_to_body_class');
 define('DISALLOW_FILE_EDIT',true);
 define('DISALLOW_FILE_MODS',true);
 
+
+
+// SVG uploads
+function allow_svg_upload( $mimes ) {
+    $mimes['svg'] = 'image/svg+xml';
+    $mimes['svgz'] = 'image/svg+xml';
+    return $mimes;
+}
+add_filter( 'upload_mimes', 'allow_svg_upload' );
+
+function handle_svg_upload( $data, $file, $filename, $mimes ) {
+    $filetype = wp_check_filetype( $filename, $mimes );
+
+    return [
+        'ext'             => $filetype['ext'],
+        'type'            => $filetype['type'],
+        'proper_filename' => $filename
+    ];
+}
+add_filter( 'wp_check_filetype_and_ext', 'handle_svg_upload', 10, 4 );
+
+
+
 ?>

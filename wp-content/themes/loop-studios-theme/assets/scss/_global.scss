@@ -13,4 +13,8 @@ body {
   width: 100%;
   max-width: 111.6rem;
   margin: 0 auto;
+  @include mobile {
+    max-width: 67rem;
+    padding: 0 4rem;
+  }
 }

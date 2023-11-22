@@ -40,6 +40,17 @@
             }
           }
         }
+        @include mobile {
+          display: none;
+        }
+      }
+    }
+    button#menu-toggle {
+      background: none;
+      border: none;
+      display: none;
+      @include mobile {
+        display: block;
       }
     }
   }
