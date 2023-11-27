@@ -53,5 +53,29 @@
         display: block;
       }
     }
+    .mobile-menu {
+      display: none;
+      @include mobile {
+        display: block;
+      }
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      position: absolute;
+      height: 100vh;
+      background: red;
+      width: 100%;
+      z-index: 1;
+      .logo-and-close-button {
+        display: none;
+        padding-top: 7.6rem;
+        @include mobile {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+        }
+      }
+    }
   }
 }
