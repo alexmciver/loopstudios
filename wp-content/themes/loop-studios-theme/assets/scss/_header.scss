@@ -56,7 +56,9 @@
     .mobile-menu {
       display: none;
       @include mobile {
+        overflow-y: hidden;
         display: block;
+        position: fixed;
       }
       top: 0;
       bottom: 0;
@@ -64,16 +66,37 @@
       right: 0;
       position: absolute;
       height: 100vh;
-      background: red;
+      background: $black;
       width: 100%;
       z-index: 1;
       .logo-and-close-button {
         display: none;
-        padding-top: 7.6rem;
+        padding-top: 6.6rem;
         @include mobile {
           display: flex;
           align-items: center;
           justify-content: space-between;
+        }
+        .close-button {
+          position: relative;
+          left: 2rem;
+        }
+      }
+      .site-navigation {
+        padding-top: 10rem;
+        margin-left: 0;
+        ul.header-menu {
+          li {
+            list-style: none;
+            padding-bottom: 6.2rem;
+            a {
+              color: $white;
+              text-transform: uppercase;
+              text-decoration: none;
+              font-family: $JosefinSans;
+              letter-spacing: 0.2rem;
+            }
+          }
         }
       }
     }
